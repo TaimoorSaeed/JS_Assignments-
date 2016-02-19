@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+        var a=2;
+        var b=1;
+
+        document.write("a is: " + a);
+        document.write("<br>b is: " + b);
+        document.write("<br>--a: "+ --a);
+        document.write("<br>--a - --b: "+ (--a - --b));
+        document.write("<br>--a - --b + ++b: "+ (--a - --b + ++b));
+        document.write("<br>--a - --b + ++b + b--: "+ (--a - --b + ++b + b--));
+        var result= --a - --b + ++b + b--;
+        document.write(result);
+    </script>
+</body>
+</html>
