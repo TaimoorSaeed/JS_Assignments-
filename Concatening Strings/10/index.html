@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+        var item1=prompt("enter the name of the first item: ");
+        var item2=prompt("enter the name of the second item: ");
+        var price1=prompt("enter the price of the first item: ");
+        var price2=prompt("enter the price of the second item: ");
+        var ord1=prompt("quantity of fist item: ");
+        var ord2=prompt("quantity if second item: ");
+        var shpCh=250;
+        var totalcost=((price1*ord1)+(price2*ord2)+ shpCh);
+        if(totalcost > 2000) {
+            var discount = totalcost * 0.1;
+            var discountPrice = totalcost-discount;
+        }
+        document.write("<h1>Shopping Cart</h1>");
+        document.write("<br><br>Price of " +item1 +" is " +price1);
+        document.write("<br>Quantity of"+ item1 + " is " +ord1);
+        document.write("<br>Price of " +item2 +" is " +price2);
+        document.write("<br>Quantity of "+ item2 + " is " +ord2);
+
+        document.write("<br><br>Shipping Charges "+shpCh);
+
+        document.write("<br>Total cost of your order is  " + totalcost+  " PKR ");
+        document.write("<br>Discounted Price  " + discountPrice +  " PKR");
+
+    </script>
+</body>
+</html>

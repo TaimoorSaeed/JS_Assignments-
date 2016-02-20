@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+        var sub1=100;
+        var sub2=100;
+        var sub3=19;
+        var total=300;
+        var obt=sub1+sub2+sub3;
+        var per=(obt/total)*100;
+        //alert(per);
+
+
+        if(per >= 80)
+        {
+            var grade="A-one";
+            var remarks="Excellent";
+        }
+        else if(per >= 70)
+        {
+            var grade="B";
+            var remarks="Good";
+        }
+        else if(per >= 60)
+        {
+            var grade="C";
+            var remarks="You need improvment";
+        }
+        else if(per > 60)
+        {
+            var grade="Fail";
+            var remarks="Sorry";
+        }
+
+        document.write("<h1>Marks Sheet</h1>");
+        document.write("<br>Total Marks: "+ total);
+        document.write("<br>Marks Obtained: "+ obt);
+        document.write("<br>Percentage: "+ per + " %");
+        document.write("<br>Grade: "+ grade);
+        document.write("<br>Remarks "+ remarks);
+    </script>
+</body>
+</html>

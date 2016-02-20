@@ -8,15 +8,24 @@
     <script>
         var a=2;
         var b=1;
-
-        document.write("a is: " + a);
-        document.write("<br>b is: " + b);
-        document.write("<br>--a: "+ --a);
-        document.write("<br>--a - --b: "+ (--a - --b));
-        document.write("<br>--a - --b + ++b: "+ (--a - --b + ++b));
-        document.write("<br>--a - --b + ++b + b--: "+ (--a - --b + ++b + b--));
-        var result= --a - --b + ++b + b--;
-        document.write(result);
+        {
+            document.write("a is: " + a);
+            document.write("<br>b is: " + b);
+            var a = --a;
+            document.write("<br><br>--a: " + a);
+            var c = a - --b;
+            document.write("<br>--a - --b: " + c);
+            var d = c + ++b;
+            document.write("<br>--a - --b + ++b: " + d);
+            var e = d + b--;
+            document.write("<br>--a - --b + ++b + b--: " + e);
+        }
+       {
+        var a=2;
+        var b=1;
+        var result= (--a - --b + ++b + b--) ;
+          document.write("<br><br>Result is : "+ result);
+        }
     </script>
 </body>
 </html>
