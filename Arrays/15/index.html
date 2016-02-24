@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+        var Cities=["Karachi", "Lahore", "Islamabad", "Quetta", "Paeshawar"];
+        document.write("<br>Cities List: ");
+
+        for (var i = 0; i < Cities.length; i++) {
+            document.write(Cities[i] + " ");
+
+        }
+
+        var sel= Cities.slice(2,4);
+
+        document.write("<br>Selected Cities List: ");
+        for (var i = 0; i < sel.length; i++) {
+            document.write(sel[i] + " ");
+
+        }
+    </script>
+</body>
+</html>

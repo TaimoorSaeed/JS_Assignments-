@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+        var color= ["Green","Magento","Gulabi","Maroon","Neela"];
+        //document.write("Select one condition:");
+        do {
+            var cond =parseInt(prompt("Enter the condition:\n0 to enter in the start of array\n1 to at the end\n2 add two or more array at the begining\n3 del the first color\n4 del the last color\n5 enter the index you want to add the color\n6 Enter which index you want to del from and till where"));
+            //cond = parseInt(cond);
+            switch (cond) {
+                case 0:
+                    color.unshift(prompt("Enter the color: "));
+                    for (var i = 0; i < color.length; i++) {
+                        document.write(color[i] + "<br>");
+                    }
+                    break;
+                case 1:
+                    color.push(prompt("Enter the color: "));
+                    for (var i = 0; i < color.length; i++) {
+                        document.write(color[i] + "<br>");
+                    }
+                    break;
+                case 2:
+                    var n=parseInt(prompt("Enter the number of colors you want to add to the begining of the array:"));
+
+                    for (var j = 0; j < n; j++) {
+                        color.unshift(prompt("Enter the color: "));
+                    }
+
+                    for (var i = 0; i < color.length; i++) {
+                        document.write(color[i] + "<br>");
+                    }
+                    break;
+
+                case 3:
+                    color.shift();
+                    for (var i = 0; i < color.length; i++) {
+                        document.write(color[i] + "<br>");
+                    }
+                    break;
+                case 4:
+                    color.pop();
+
+                    for (var i = 0; i < color.length; i++) {
+                        document.write(color[i] + "<br>");
+                    }
+                    break;
+
+                case 5:
+                        var ind=parseInt(prompt("Enter the index:"));
+                        var val=prompt("Enter the value:");
+                    color.splice(ind,0,val);
+
+                    for (var i = 0; i < color.length; i++) {
+                        document.write(color[i] + "<br>");
+                    }
+                    break;
+                case 6:
+                    var ind=parseInt(prompt("Enter the index:"));
+                    var ind2=parseInt(prompt("Enter the index:"));
+                    color.splice(ind,ind);
+
+                    for (var i = 0; i < color.length; i++) {
+                        document.write(color[i] + "<br>");
+                    }
+                    break;
+                default:
+                    document.write("Invalid Selection!")
+
+            }
+
+        }while (parseInt(prompt("Do you want to do it again?\n0 to exit\n1 to procees")));
+
+    </script>
+</body>
+</html>
