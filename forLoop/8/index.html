@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+        var ava=false;
+        var arr=["cake","apple pie","cookie","chips","patties"];
+        var input=prompt("Enter the item you want to order:");
+        for(i=0 ; i<arr.length ; i++)
+        {
+         if (arr[i]==input)
+         {
+             document.write(arr[i] + " is avaliable at index " + i);
+             var ava=true;
+             break;
+         }
+        }
+        if(ava==false)
+        {
+            document.write(input + " is not avalible.")
+        }
+
+
+
+    </script>
+</body>
+</html>
