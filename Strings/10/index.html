@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+        var url=prompt("Enter the URL: ");
+        for(var i=0 ; i < url.length ; i++)
+        {
+            if (url.charAt(i)=== "."){
+                document.write(url.slice(i+1,url.length));
+                break;
+            }
+        }
+
+    </script>
+</body>
+</html>

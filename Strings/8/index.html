@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+        var message=("Ali and sami are best friends.They play football and cricket together");
+        document.write(message+ "<br>");
+
+       for (var i = 0; i < message.length; i++) {
+           if (message.slice(i, i+ 3) === "and") {
+               message = message.slice(0, i) + "&" + message.slice(i + 3);
+           }
+       }
+    document.write(message);
+    </script>
+</body>
+</html>

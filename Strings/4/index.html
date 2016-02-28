@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+        var counter=0;
+        var str= "Hello World";
+        document.write("String: "+ str);
+        for(i=0 ; i < str.length ; i++) {
+            if (str[i] == "l") {
+                counter++;
+                if (counter==3)
+                {
+                    document.write("Inside")
+                    break
+                }
+            }
+        }
+        document.write("<br> Last Index of l:"+  i);
+    </script>
+</body>
+</html>
