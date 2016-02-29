@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+        var str="Pakistan";
+        var vowels=0; var consonants =0;
+        for(var i=0 ; i < str.length ; i++) {
+            if (str[i] == "a" || str[i] == "e" || str[i] == "i" || str[i] == "o" || str[i] == "u") {
+                vowels++;
+            }
+        }
+        consonants=(str.length)-vowels;
+        document.write("<br>Vowels are: " + vowels + "Consonanats are: " + consonants);
+    </script>
+</body>
+</html>

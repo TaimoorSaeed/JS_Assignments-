@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    var days=["Sun","Mon","Tue","Wed","Thr","Fri","Sat"];
+    var date=new Date();
+    var day=date.getDay();
+    for(var i=0 ; i < days.length ; i++)
+    {
+        if((day == 0) || (day == 6)){
+            document.write("It's fun day " );
+        }
+    }
+</script>
+</body>
+</html>
